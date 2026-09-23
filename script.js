@@ -110,3 +110,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 });
+/* FAQ ACCORDION */
+
+const faqQuestions =
+    document.querySelectorAll(".faq-question");
+
+
+faqQuestions.forEach(function (question) {
+
+    question.addEventListener("click", function () {
+
+        const item =
+            question.parentElement;
+
+
+        item.classList.toggle("active");
+
+
+        faqQuestions.forEach(function (otherQuestion) {
+
+            const otherItem =
+                otherQuestion.parentElement;
+
+
+            if (otherItem !== item) {
+
+                otherItem.classList.remove("active");
+
+            }
+
+        });
+
+    });
+
+});
