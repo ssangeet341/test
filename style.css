@@ -822,3 +822,226 @@ footer {
     }
 
 }
+/* ABOUT PAGE */
+
+.page-hero {
+
+    padding: 110px 8% 80px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #f5f1e8,
+            #e5eee7
+        );
+}
+
+
+.page-hero h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(55px, 7vw, 85px);
+
+    font-weight: normal;
+
+    line-height: 1;
+
+    margin: 20px 0;
+}
+
+
+.page-hero h1 em {
+
+    color: #52675d;
+
+    font-weight: normal;
+}
+
+
+.page-hero > p:last-child {
+
+    max-width: 560px;
+
+    color: #69736e;
+
+    font-size: 17px;
+}
+
+
+/* ABOUT GRID */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 8vw;
+
+    align-items: center;
+}
+
+
+/* DOCTOR IMAGE PLACEHOLDER */
+
+.doctor-visual {
+
+    min-height: 530px;
+
+    background: #f0ece2;
+
+    border-radius: 25px;
+
+    display: grid;
+
+    place-items: center;
+
+    overflow: hidden;
+}
+
+
+.doctor-visual .doctor-placeholder {
+
+    width: 65%;
+
+    height: 430px;
+
+    margin: 0;
+}
+
+
+/* DOCTOR STATS */
+
+.doctor-stats {
+
+    margin-top: 35px;
+
+    border-top:
+        1px solid #ddd9d0;
+}
+
+
+.doctor-stats div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 17px 0;
+
+    border-bottom:
+        1px solid #ddd9d0;
+}
+
+
+.doctor-stats strong {
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+}
+
+
+.doctor-stats span {
+
+    font-size: 13px;
+
+    color: #69736e;
+}
+
+
+/* VALUES */
+
+.values-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 40px;
+}
+
+
+.values-grid article {
+
+    padding: 35px;
+
+    background: white;
+
+    border:
+        1px solid #e2dfd8;
+
+    border-radius: 18px;
+
+    transition: .3s;
+}
+
+
+.values-grid article:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.06);
+}
+
+
+.values-grid span {
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+}
+
+
+.values-grid h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    margin:
+        25px 0 8px;
+}
+
+
+.values-grid p {
+
+    color: #737c77;
+
+    font-size: 14px;
+}
+
+
+/* MOBILE ABOUT PAGE */
+
+@media (max-width: 800px) {
+
+    .about-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .values-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .page-hero {
+
+        padding:
+            75px 7% 60px;
+    }
+
+}
