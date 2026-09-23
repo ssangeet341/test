@@ -1043,5 +1043,250 @@ footer {
         padding:
             75px 7% 60px;
     }
+/* TREATMENTS PAGE */
 
+.treatments-page {
+    padding-top: 80px;
+}
+
+
+.large-treatment {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 7vw;
+
+    align-items: center;
+
+    padding: 70px 0;
+
+    border-bottom:
+        1px solid #ddd9d0;
+}
+
+
+.large-treatment.reverse
+.treatment-image {
+
+    order: 2;
+
+}
+
+
+.large-treatment.reverse
+.treatment-information {
+
+    order: 1;
+
+}
+
+
+.treatment-image {
+
+    height: 450px;
+
+    border-radius: 25px;
+
+    display: grid;
+
+    place-items: end start;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.treatment-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 70% 20%,
+            rgba(255,255,255,.5),
+            transparent 35%
+        );
+
+}
+
+
+.treatment-image span {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    color: white;
+
+    letter-spacing: 1px;
+}
+
+
+/* Temporary demo backgrounds */
+
+.acne-image {
+
+    background:
+        linear-gradient(
+            145deg,
+            #d9c4b8,
+            #9f7666
+        );
+}
+
+
+.rejuvenation-image {
+
+    background:
+        linear-gradient(
+            145deg,
+            #d9e0d3,
+            #8fa38f
+        );
+}
+
+
+.laser-image {
+
+    background:
+        linear-gradient(
+            145deg,
+            #d9d6d0,
+            #8c8881
+        );
+}
+
+
+.hydra-image {
+
+    background:
+        linear-gradient(
+            145deg,
+            #cbdde0,
+            #71969b
+        );
+}
+
+
+.hair-image {
+
+    background:
+        linear-gradient(
+            145deg,
+            #cbbbaa,
+            #765f4c
+        );
+}
+
+
+.treatment-information h2 {
+
+    font-family: Georgia, serif;
+
+    font-weight: normal;
+
+    font-size: 48px;
+
+    line-height: 1.05;
+
+    margin:
+        15px 0 20px;
+}
+
+
+.treatment-information > p {
+
+    color: #69736e;
+
+    max-width: 520px;
+}
+
+
+.treatment-information ul {
+
+    list-style: none;
+
+    margin: 25px 0 30px;
+
+    display: grid;
+
+    gap: 9px;
+}
+
+
+.treatment-information li {
+
+    font-size: 13px;
+
+    color: #4d5953;
+
+}
+
+
+.treatment-information li::before {
+
+    content: "✓";
+
+    margin-right: 10px;
+
+    font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+
+    .large-treatment {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 50px 0;
+    }
+
+
+    .large-treatment.reverse
+    .treatment-image {
+
+        order: 1;
+
+    }
+
+
+    .large-treatment.reverse
+    .treatment-information {
+
+        order: 2;
+
+    }
+
+
+    .treatment-image {
+
+        height: 330px;
+
+    }
+
+
+    .treatment-information h2 {
+
+        font-size: 40px;
+
+    }
+
+}
 }
