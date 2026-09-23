@@ -1,81 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Test Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dr. Kanha | Dermatology & Aesthetic Care</title>
 
-    <meta name="description" content="This is my first test website created using GitHub Pages.">
+    <meta name="description"
+        content="Dr. Kanha provides personalised dermatology, skin, hair and aesthetic care. Book a consultation today.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Welcome to My Test Website</h1>
+    <!-- NAVIGATION -->
 
-        <p>This website is created using GitHub Pages.</p>
+    <header class="navbar">
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+        <a href="index.html" class="logo">
+            <span class="logo-circle">K</span>
+
+            <span>
+                <strong>Dr. Kanha</strong>
+                <small>Dermatology · Aesthetics · Wellness</small>
+            </span>
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="treatments.html">Treatments</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="booking.html" class="nav-button">
+                Book Consultation
+            </a>
+
         </nav>
+
     </header>
 
 
-    <main>
 
-        <section id="about">
-            <h2>About Us</h2>
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                PERSONALIZED SKIN & AESTHETIC CARE
+            </p>
+
+            <h1>
+                Healthy skin.
+                <br>
+                <em>Confident you.</em>
+            </h1>
+
+            <p class="hero-description">
+
+                Thoughtful dermatology and aesthetic care
+                designed around your skin, your concerns
+                and your goals.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="booking.html" class="primary-button">
+                    Book a Consultation →
+                </a>
+
+                <a href="treatments.html" class="text-button">
+                    Explore Treatments
+                </a>
+
+            </div>
+
+
+            <div class="trust-items">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Personalised plans</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Modern procedures</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Patient-first care</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual">
+
+            <div class="circle circle-one"></div>
+
+            <div class="circle circle-two"></div>
+
+            <div class="doctor-placeholder">
+
+                <div class="doctor-placeholder-text">
+
+                    <span>DR. KANHA</span>
+
+                    <small>
+                        SKIN · HAIR · AESTHETICS
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card">
+
+                <strong>Care that feels personal.</strong>
+
+                <span>
+                    From consultation to follow-up.
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INTRO -->
+
+    <section class="intro section">
+
+        <div>
+
+            <p class="eyebrow">
+                A DIFFERENT APPROACH
+            </p>
+
+            <h2>
+                Science-led care,
+                <em>without the overwhelm.</em>
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Every skin concern is different.
+            Our approach starts with understanding
+            your concern, setting realistic goals and
+            choosing an appropriate treatment plan.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- TREATMENTS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    POPULAR SERVICES
+                </p>
+
+                <h2>
+                    Explore your
+                    <em>care options.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="carousel-buttons">
+
+                <button id="previous">
+                    ←
+                </button>
+
+                <button id="next">
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="treatment-carousel" id="carousel">
+
+            <article class="treatment-card">
+
+                <div class="icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Acne Care
+                </h3>
+
+                <p>
+                    Personalised approaches for active acne,
+                    marks and post-acne concerns.
+                </p>
+
+                <a href="treatments.html#acne">
+                    Learn more →
+                </a>
+
+            </article>
+
+
+            <article class="treatment-card">
+
+                <div class="icon">
+                    ◌
+                </div>
+
+                <h3>
+                    Skin Rejuvenation
+                </h3>
+
+                <p>
+                    Options designed to support texture,
+                    tone and overall skin appearance.
+                </p>
+
+                <a href="treatments.html#rejuvenation">
+                    Learn more →
+                </a>
+
+            </article>
+
+
+            <article class="treatment-card">
+
+                <div class="icon">
+                    ⌁
+                </div>
+
+                <h3>
+                    Laser Hair Reduction
+                </h3>
+
+                <p>
+                    A consultation-led approach to
+                    unwanted hair and treatment planning.
+                </p>
+
+                <a href="treatments.html#laser">
+                    Learn more →
+                </a>
+
+            </article>
+
+
+            <article class="treatment-card">
+
+                <div class="icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Hydra Facial
+                </h3>
+
+                <p>
+                    A cosmetic facial experience focused
+                    on cleansing and hydration.
+                </p>
+
+                <a href="treatments.html#hydra">
+                    Learn more →
+                </a>
+
+            </article>
+
+
+            <article class="treatment-card">
+
+                <div class="icon">
+                    ✧
+                </div>
+
+                <h3>
+                    Hair & Scalp Care
+                </h3>
+
+                <p>
+                    Evaluation and personalised options
+                    for common hair and scalp concerns.
+                </p>
+
+                <a href="treatments.html#hair">
+                    Learn more →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="dark-section">
+
+        <div>
+
+            <p class="eyebrow light">
+                YOUR FIRST VISIT
+            </p>
+
+            <h2>
+                Not sure where
+                <em>to start?</em>
+            </h2>
 
             <p>
-                Welcome! This is a sample website that I am creating
-                to learn how websites work.
+                Start with a consultation.
+                We'll understand your concern and
+                discuss suitable next steps.
             </p>
-        </section>
+
+            <a href="booking.html" class="light-button">
+                Request an Appointment →
+            </a>
+
+        </div>
+
+    </section>
 
 
-        <section id="services">
-            <h2>Our Services</h2>
 
-            <div>
-                <h3>Service One</h3>
-                <p>This is our first sample service.</p>
-            </div>
+    <!-- TESTIMONIAL -->
 
-            <div>
-                <h3>Service Two</h3>
-                <p>This is our second sample service.</p>
-            </div>
+    <section class="section testimonial">
 
-            <div>
-                <h3>Service Three</h3>
-                <p>This is our third sample service.</p>
-            </div>
-        </section>
+        <p class="eyebrow">
+            PATIENT VOICE
+        </p>
 
+        <div class="testimonial-box">
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-
-            <p>Email: test@example.com</p>
-
-            <p>Phone: +91 98765 43210</p>
-
-            <button onclick="alert('Thank you for contacting us!')">
-                Contact Us
+            <button id="quotePrevious">
+                ←
             </button>
-        </section>
 
-    </main>
+            <div>
 
+                <p id="quote">
+                    “A calm, welcoming experience
+                    and everything was explained clearly.”
+                </p>
+
+                <span id="quoteName">
+                    — Sample patient feedback
+                </span>
+
+            </div>
+
+            <button id="quoteNext">
+                →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>© 2026 My Test Website</p>
+
+        <div class="footer-brand">
+
+            <div class="logo">
+
+                <span class="logo-circle">
+                    K
+                </span>
+
+                <span>
+                    <strong>Dr. Kanha</strong>
+
+                    <small>
+                        Dermatology · Aesthetics · Wellness
+                    </small>
+                </span>
+
+            </div>
+
+            <p>
+                Thoughtful care for healthier-looking
+                skin and confidence.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="about.html">About</a>
+
+            <a href="treatments.html">
+                Treatments
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="booking.html">
+                Book
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 Dr. Kanha. Test Website.
+        </p>
+
     </footer>
 
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
