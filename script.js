@@ -144,3 +144,28 @@ faqQuestions.forEach(function (question) {
     });
 
 });
+/* ============================= */
+/* BOOKING FORM */
+/* ============================= */
+
+const bookingForm = document.getElementById("bookingForm");
+const successMessage = document.getElementById("successMessage");
+
+if (bookingForm) {
+
+    bookingForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        bookingForm.style.display = "none";
+
+        successMessage.classList.add("show");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
