@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Consultation | Dr. Kanha</title>
+
+    <meta name="description"
+        content="Book a consultation and share your concerns with Dr. Kanha's clinic.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        Dr. Kanha
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="treatments.html">Treatments</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-button">Book Consultation</a>
+    </div>
+
+</nav>
+
+
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            APPOINTMENT
+        </p>
+
+        <h1>
+            Your visit starts here.
+        </h1>
+
+        <p>
+            Tell us a little about yourself and your concerns.
+            Our team will help you with the next step.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- BOOKING FORM -->
+
+<section class="booking-section">
+
+    <div class="container">
+
+        <form id="bookingForm">
+
+
+            <!-- PATIENT DETAILS -->
+
+            <div class="form-card">
+
+                <div class="form-heading">
+
+                    <span class="form-number">01</span>
+
+                    <div>
+                        <h2>Patient details</h2>
+                        <p>Basic information to help us know you better.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="age">
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="1"
+                            max="120"
+                            placeholder="Your age"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select id="gender" name="gender">
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option>
+                                Female
+                            </option>
+
+                            <option>
+                                Male
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                            <option>
+                                Prefer not to say
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+91 XXXXX XXXXX"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="email">
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- VISIT DETAILS -->
+
+            <div class="form-card">
+
+                <div class="form-heading">
+
+                    <span class="form-number">02</span>
+
+                    <div>
+                        <h2>Your visit</h2>
+                        <p>Tell us about the appointment you're looking for.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Is this your first visit? *
+                    </label>
+
+                    <div class="option-row">
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="patientType"
+                                value="First visit"
+                                required
+                            >
+                            <span>First visit</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="patientType"
+                                value="Returning patient"
+                            >
+                            <span>Returning patient</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Preferred date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Preferred time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="time"
+                            name="time"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Preferred consultation slot
+                    </label>
+
+                    <div class="option-row">
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="slot"
+                                value="Morning"
+                            >
+                            <span>Morning</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="slot"
+                                value="Afternoon"
+                            >
+                            <span>Afternoon</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="slot"
+                                value="Evening"
+                            >
+                            <span>Evening</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="slot"
+                                value="No preference"
+                            >
+                            <span>No preference</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Would you prefer an afternoon consultation?
+                    </label>
+
+                    <div class="option-row">
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="afternoon"
+                                value="Yes"
+                            >
+                            <span>Yes</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="afternoon"
+                                value="No"
+                            >
+                            <span>No</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="afternoon"
+                                value="No preference"
+                            >
+                            <span>No preference</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="concern">
+                        Main concern
+                    </label>
+
+                    <select id="concern" name="concern">
+
+                        <option value="">
+                            Select your main concern
+                        </option>
+
+                        <option>
+                            Acne
+                        </option>
+
+                        <option>
+                            Pigmentation
+                        </option>
+
+                        <option>
+                            Hair fall
+                        </option>
+
+                        <option>
+                            Unwanted hair
+                        </option>
+
+                        <option>
+                            Anti-ageing
+                        </option>
+
+                        <option>
+                            Skin rejuvenation
+                        </option>
+
+                        <option>
+                            General consultation
+                        </option>
+
+                        <option>
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MEDICAL HISTORY -->
+
+            <div class="form-card">
+
+                <div class="form-heading">
+
+                    <span class="form-number">03</span>
+
+                    <div>
+                        <h2>Medical history</h2>
+                        <p>Select anything that may be relevant to your consultation.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="checkbox-grid">
+
+                    <label class="check-option">
+                        <input type="checkbox" name="history" value="Diabetes">
+                        <span>Diabetes</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="history" value="Hypertension">
+                        <span>Hypertension</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="history" value="Thyroid">
+                        <span>Thyroid condition</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="history" value="PCOS/PCOD">
+                        <span>PCOS / PCOD</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="history" value="Allergies">
+                        <span>Known allergies</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="history" value="Previous treatment">
+                        <span>Previous skin/hair treatment</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="history" value="Current medication">
+                        <span>Currently taking medication</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="history" value="None">
+                        <span>None of these</span>
+                    </label>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="medications">
+                        Current medication / relevant medical information
+                    </label>
+
+                    <textarea
+                        id="medications"
+                        name="medications"
+                        rows="4"
+                        placeholder="Optional — mention anything you think the doctor should know."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONCERNS -->
+
+            <div class="form-card">
+
+                <div class="form-heading">
+
+                    <span class="form-number">04</span>
+
+                    <div>
+                        <h2>Skin & hair concerns</h2>
+                        <p>You can select more than one.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="checkbox-grid">
+
+                    <label class="check-option">
+                        <input type="checkbox" name="concerns" value="Acne">
+                        <span>Acne</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="concerns" value="Pigmentation">
+                        <span>Pigmentation</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="concerns" value="Hair fall">
+                        <span>Hair fall</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="concerns" value="Unwanted hair">
+                        <span>Unwanted hair</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="concerns" value="Anti-ageing">
+                        <span>Anti-ageing</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="concerns" value="Skin rejuvenation">
+                        <span>Skin rejuvenation</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="concerns" value="Other">
+                        <span>Other</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHOTO CONSENT -->
+
+            <div class="form-card">
+
+                <div class="form-heading">
+
+                    <span class="form-number">05</span>
+
+                    <div>
+                        <h2>Photography consent</h2>
+                        <p>
+                            This helps the clinic document treatment progress.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Clinical photography consent
+                    </label>
+
+                    <div class="option-column">
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="clinicalPhoto"
+                                value="Yes - Full face"
+                            >
+                            <span>Yes — full face</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="clinicalPhoto"
+                                value="Yes - Half face / selected area"
+                            >
+                            <span>Yes — half face / selected area</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="clinicalPhoto"
+                                value="Yes - Treatment area only"
+                            >
+                            <span>Yes — treatment area only</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="clinicalPhoto"
+                                value="No"
+                            >
+                            <span>No</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Permission for educational / promotional use
+                    </label>
+
+                    <div class="option-row">
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="publicPhoto"
+                                value="Yes"
+                            >
+                            <span>Yes</span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="publicPhoto"
+                                value="No"
+                            >
+                            <span>No</span>
+                        </label>
+
+                    </div>
+
+                    <p class="form-note">
+                        This is separate from clinical documentation and should
+                        be used only after the clinic's final consent wording
+                        has been reviewed and approved.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FEEDBACK -->
+
+            <div class="form-card">
+
+                <div class="form-heading">
+
+                    <span class="form-number">06</span>
+
+                    <div>
+                        <h2>Feedback</h2>
+                        <p>Help us understand how you found us.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="source">
+                            How did you hear about us?
+                        </label>
+
+                        <select id="source" name="source">
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option>Google</option>
+                            <option>Instagram</option>
+                            <option>Facebook</option>
+                            <option>Friend / Family</option>
+                            <option>Existing patient</option>
+                            <option>Walk-in</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="rating">
+                            Experience rating
+                        </label>
+
+                        <select id="rating" name="rating">
+
+                            <option value="">
+                                Select rating
+                            </option>
+
+                            <option>5 — Excellent</option>
+                            <option>4 — Very good</option>
+                            <option>3 — Good</option>
+                            <option>2 — Needs improvement</option>
+                            <option>1 — Poor</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="feedback">
+                        Your feedback
+                    </label>
+
+                    <textarea
+                        id="feedback"
+                        name="feedback"
+                        rows="5"
+                        placeholder="Tell us about your experience..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACKNOWLEDGEMENT -->
+
+            <div class="form-card acknowledgement">
+
+                <label class="consent-checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="acknowledgement"
+                        required
+                    >
+
+                    <span>
+                        I confirm that the information provided by me is
+                        accurate to the best of my knowledge. I understand that
+                        this form is for appointment/clinic communication and
+                        is not intended for medical emergencies.
+                    </span>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- SUBMIT -->
+
+            <div class="form-submit">
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
+                    Request Appointment
+                </button>
+
+                <p>
+                    Our team can contact you to confirm the appointment.
+                </p>
+
+            </div>
+
+
+        </form>
+
+
+
+        <!-- SUCCESS MESSAGE -->
+
+        <div
+            id="successMessage"
+            class="success-message"
+        >
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Thank you.
+            </h2>
+
+            <p>
+                Your appointment request has been recorded for this demo.
+                The clinic team can contact you for confirmation.
+            </p>
+
+            <button
+                onclick="window.location.reload()"
+                class="secondary-button"
+            >
+                Submit another request
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="dark-cta">
+
+    <div class="container">
+
+        <h2>
+            Have a question before booking?
+        </h2>
+
+        <p>
+            We're happy to help.
+        </p>
+
+        <a href="contact.html" class="light-button">
+            Contact the Clinic
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 Dr. Kanha. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
