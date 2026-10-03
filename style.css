@@ -1569,308 +1569,867 @@ footer {
         min-height: 400px;
     }
 /* ============================= */
-/* BOOKING PAGE */
-/* ============================= */
+/* ================================================= */
+/* PREMIUM BOOKING PAGE */
+/* ================================================= */
 
-.booking-section {
-    padding: 80px 0;
-    background: #f8f7f4;
+.booking-hero {
+    background: #f4f0ea;
+    padding: 105px 20px 100px;
+    text-align: center;
 }
 
-.form-card {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 20px;
-    margin-bottom: 28px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.04);
+.booking-hero-inner {
+    max-width: 760px;
+    margin: auto;
 }
 
-.form-heading {
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
-    margin-bottom: 35px;
-}
-
-.form-number {
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    padding-top: 7px;
-}
-
-.form-heading h2 {
-    margin: 0 0 7px;
-}
-
-.form-heading p {
-    margin: 0;
+.booking-eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 22px;
     color: #777;
 }
 
-.form-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+.booking-hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 400;
+    margin: 0 auto 25px;
+    letter-spacing: -1.5px;
 }
 
-.form-group {
+.booking-hero p:not(.booking-eyebrow) {
+    max-width: 580px;
+    margin: auto;
+    color: #6f6f6f;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+/* ================================================= */
+/* MAIN LAYOUT */
+/* ================================================= */
+
+.booking-area {
+    background: #faf9f7;
+    padding: 85px 30px 100px;
+}
+
+.booking-layout {
+    max-width: 1180px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 760px) 320px;
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* ================================================= */
+/* FORM SECTIONS */
+/* ================================================= */
+
+.booking-section-block {
+    padding: 0 0 70px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #e5e1db;
+}
+
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
     margin-bottom: 28px;
 }
 
-.form-group:last-child {
-    margin-bottom: 0;
+.section-label span {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #8c8378;
 }
 
-.full-width {
+.section-label p {
+    margin: 0;
+
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+
+    color: #8c8378;
+}
+
+.booking-section-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.section-description {
+    margin: 0 0 35px;
+    color: #858585;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* ================================================= */
+/* FORM FIELDS */
+/* ================================================= */
+
+.clean-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px 22px;
+}
+
+.clean-field {
+    margin-bottom: 28px;
+}
+
+.full-field {
     grid-column: 1 / -1;
 }
 
-.form-group label {
+.clean-field label {
     display: block;
-    margin-bottom: 9px;
+
+    font-size: 12px;
     font-weight: 600;
-    font-size: 14px;
+
+    margin-bottom: 9px;
+
+    color: #333;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.clean-field label span {
+    color: #9a7169;
+}
+
+.clean-field input,
+.clean-field select,
+.clean-field textarea {
+
     width: 100%;
-    padding: 15px 16px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #fff;
-    font-family: inherit;
-    font-size: 15px;
+
     box-sizing: border-box;
+
+    border: 1px solid #ddd8d1;
+
+    border-radius: 3px;
+
+    padding: 15px 16px;
+
+    background: #fff;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    color: #333;
+
     outline: none;
-    transition: 0.2s;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
 }
 
-.form-group textarea {
+.clean-field textarea {
     resize: vertical;
+    min-height: 110px;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: #777;
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.04);
+.clean-field input:focus,
+.clean-field select:focus,
+.clean-field textarea:focus {
+
+    border-color: #8b8178;
+
+    box-shadow:
+        0 0 0 3px rgba(120,110,100,.06);
+}
+
+.clean-field input::placeholder,
+.clean-field textarea::placeholder {
+    color: #aaa;
 }
 
 
-/* OPTIONS */
+/* ================================================= */
+/* CHOICE CARDS */
+/* ================================================= */
 
-.option-row {
-    display: flex;
-    flex-wrap: wrap;
+.choice-grid {
+    display: grid;
     gap: 12px;
 }
 
-.option-column {
+.choice-grid.two {
+    grid-template-columns: 1fr 1fr;
+}
+
+.choice-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+
+    padding: 18px;
+
+    border: 1px solid #ddd8d1;
+    background: #fff;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.choice-card:hover {
+    border-color: #aaa198;
+}
+
+.choice-card input {
+    margin-top: 4px;
+    accent-color: #292725;
+}
+
+.choice-card span {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 4px;
 }
 
-.option {
-    display: inline-flex;
-    align-items: center;
+.choice-card strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.choice-card small {
+    color: #898989;
+    font-size: 12px;
+}
+
+
+/* ================================================= */
+/* PILL OPTIONS */
+/* ================================================= */
+
+.choice-pills,
+.mini-pills {
+    display: flex;
+    flex-wrap: wrap;
     gap: 9px;
-    border: 1px solid #ddd;
-    padding: 12px 16px;
-    border-radius: 10px;
+}
+
+.choice-pills label,
+.mini-pills label {
+
+    position: relative;
     cursor: pointer;
-    transition: 0.2s;
+}
+
+.choice-pills input,
+.mini-pills input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.choice-pills span,
+.mini-pills span {
+
+    display: block;
+
+    padding: 11px 17px;
+
+    border: 1px solid #ddd8d1;
+
     background: #fff;
+
+    font-size: 12px;
+
+    transition: .2s ease;
 }
 
-.option:hover {
-    border-color: #999;
+.choice-pills input:checked + span,
+.mini-pills input:checked + span {
+
+    background: #292725;
+
+    border-color: #292725;
+
+    color: #fff;
 }
 
-.option input {
-    accent-color: #222;
+
+/* ================================================= */
+/* AFTERNOON QUESTION */
+/* ================================================= */
+
+.afternoon-question,
+.public-consent {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 22px 0;
+
+    border-top: 1px solid #ebe7e2;
+}
+
+.afternoon-question strong,
+.public-consent strong {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.afternoon-question p,
+.public-consent p {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #888;
+
+    line-height: 1.6;
 }
 
 
-/* CHECKBOXES */
+/* ================================================= */
+/* CONCERNS */
+/* ================================================= */
 
-.checkbox-grid {
+.concern-grid,
+.medical-grid {
+
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+
+    gap: 10px;
+
+    margin-bottom: 32px;
+}
+
+.concern-grid label,
+.medical-grid label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-height: 50px;
+
+    padding: 0 15px;
+
+    background: #fff;
+
+    border: 1px solid #ddd8d1;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    transition: .2s ease;
+}
+
+.concern-grid label:hover,
+.medical-grid label:hover {
+    border-color: #aaa198;
+}
+
+.concern-grid input,
+.medical-grid input {
+    accent-color: #292725;
+}
+
+
+/* ================================================= */
+/* PHOTO CONSENT */
+/* ================================================= */
+
+.small-note {
+
+    margin: 18px 0 0;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: #999;
+}
+
+
+/* ================================================= */
+/* FINAL CONSENT */
+/* ================================================= */
+
+.final-consent {
+
+    background: #f1ede7;
+
+    padding: 22px;
+
     margin-bottom: 30px;
 }
 
-.check-option {
+.final-consent label {
+
     display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 16px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.2s;
-}
 
-.check-option:hover {
-    border-color: #999;
-}
-
-.check-option input {
-    accent-color: #222;
-}
-
-
-/* NOTE */
-
-.form-note {
-    font-size: 13px;
-    line-height: 1.6;
-    color: #777;
-    margin-top: 12px;
-}
-
-
-/* ACKNOWLEDGEMENT */
-
-.acknowledgement {
-    background: #f2f0eb;
-}
-
-.consent-checkbox {
-    display: flex;
-    gap: 14px;
     align-items: flex-start;
-    font-size: 14px;
+
+    gap: 12px;
+
+    font-size: 12px;
+
     line-height: 1.7;
-}
 
-.consent-checkbox input {
-    margin-top: 5px;
-    accent-color: #222;
-}
+    color: #666;
 
-
-/* SUBMIT */
-
-.form-submit {
-    text-align: center;
-    padding: 20px 0 10px;
-}
-
-.form-submit p {
-    margin-top: 15px;
-    color: #777;
-    font-size: 14px;
-}
-
-.primary-button {
-    border: none;
     cursor: pointer;
+}
+
+.final-consent input {
+    margin-top: 4px;
+    accent-color: #292725;
+}
+
+
+/* ================================================= */
+/* SUBMIT */
+/* ================================================= */
+
+.booking-submit {
+    text-align: left;
+}
+
+.booking-submit-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    min-width: 245px;
+
+    padding: 17px 23px;
+
+    border: none;
+
+    background: #292725;
+
+    color: #fff;
+
     font-family: inherit;
-    font-size: 15px;
-    padding: 16px 30px;
-    border-radius: 30px;
-    background: #222;
-    color: white;
-    transition: 0.3s;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
 }
 
-.primary-button:hover {
+.booking-submit-button span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.booking-submit-button:hover {
+    background: #4b4743;
     transform: translateY(-2px);
-    opacity: 0.9;
+}
+
+.booking-submit > p {
+
+    margin-top: 14px;
+
+    color: #999;
+
+    font-size: 11px;
 }
 
 
-/* SUCCESS MESSAGE */
+/* ================================================= */
+/* SIDEBAR */
+/* ================================================= */
 
-.success-message {
+.booking-sidebar {
+    position: sticky;
+    top: 105px;
+}
+
+.sidebar-card {
+
+    background: #292725;
+
+    color: #fff;
+
+    padding: 35px;
+
+}
+
+.sidebar-eyebrow {
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+
+    color: #bcb6ae;
+
+    margin: 0 0 20px;
+}
+
+.sidebar-card h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    line-height: 1.3;
+
+    font-weight: 400;
+
+    margin: 0 0 18px;
+}
+
+.sidebar-card > p {
+
+    color: #c3beb8;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+.sidebar-line {
+
+    height: 1px;
+
+    background: #4b4845;
+
+    margin: 30px 0;
+}
+
+.sidebar-point {
+
+    display: grid;
+
+    grid-template-columns: 28px 1fr;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.sidebar-point:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-point > span {
+
+    color: #aaa39b;
+
+    font-size: 10px;
+
+    padding-top: 2px;
+}
+
+.sidebar-point strong {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.sidebar-point p {
+
+    margin: 0;
+
+    color: #aaa6a1;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================================= */
+/* SIDEBAR NOTE */
+/* ================================================= */
+
+.sidebar-note {
+
+    padding: 27px 0;
+
+    border-bottom: 1px solid #ddd8d1;
+}
+
+.sidebar-note strong {
+
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 6px;
+}
+
+.sidebar-note p {
+
+    margin: 0 0 12px;
+
+    font-size: 12px;
+
+    color: #888;
+}
+
+.sidebar-note a {
+
+    font-size: 12px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #aaa;
+
+    padding-bottom: 3px;
+}
+
+
+/* ================================================= */
+/* SUCCESS */
+/* ================================================= */
+
+.booking-success {
+
     display: none;
-    background: #ffffff;
-    padding: 60px 30px;
-    border-radius: 20px;
+
+    padding: 90px 30px;
+
     text-align: center;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.05);
+
+    background: #fff;
+
+    border: 1px solid #e3dfda;
 }
 
-.success-message.show {
+.booking-success.show {
     display: block;
 }
 
-.success-icon {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    background: #222;
-    color: white;
+.success-check {
+
+    width: 60px;
+    height: 60px;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     margin: 0 auto 25px;
-    font-size: 28px;
+
+    border-radius: 50%;
+
+    background: #292725;
+
+    color: #fff;
+
+    font-size: 25px;
 }
 
-.success-message h2 {
-    margin-bottom: 12px;
+.booking-success h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    margin: 10px 0 15px;
 }
 
-.success-message p {
-    max-width: 600px;
-    margin: 0 auto 25px;
+.booking-success > p:not(.booking-eyebrow) {
+
+    max-width: 500px;
+
+    margin: auto;
+
     color: #777;
-    line-height: 1.7;
+
+    line-height: 1.8;
+
+    font-size: 14px;
 }
 
-.secondary-button {
-    border: 1px solid #222;
+.success-again {
+
+    margin-top: 25px;
+
+    padding: 13px 22px;
+
     background: transparent;
-    padding: 13px 24px;
-    border-radius: 25px;
+
+    border: 1px solid #333;
+
     cursor: pointer;
+
     font-family: inherit;
 }
 
 
+/* ================================================= */
 /* MOBILE */
+/* ================================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
-    .booking-section {
-        padding: 50px 0;
-    }
+    .booking-layout {
 
-    .form-card {
-        padding: 25px 20px;
-        border-radius: 16px;
-    }
-
-    .form-grid {
         grid-template-columns: 1fr;
+
+        max-width: 760px;
+
+    }
+
+    .booking-sidebar {
+
+        position: static;
+
+        order: -1;
+
+    }
+
+    .sidebar-card {
+
+        padding: 30px;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .booking-hero {
+
+        padding: 75px 20px 70px;
+
+    }
+
+    .booking-hero h1 {
+
+        font-size: 42px;
+
+    }
+
+    .booking-area {
+
+        padding: 55px 18px 70px;
+
+    }
+
+    .booking-section-block {
+
+        padding-bottom: 50px;
+
+        margin-bottom: 50px;
+
+    }
+
+    .booking-section-content h2 {
+
+        font-size: 25px;
+
+    }
+
+    .clean-form-grid {
+
+        grid-template-columns: 1fr;
+
         gap: 0;
+
     }
 
-    .checkbox-grid {
+    .choice-grid.two {
+
         grid-template-columns: 1fr;
+
     }
 
-    .form-heading {
-        gap: 12px;
+    .concern-grid,
+    .medical-grid {
+
+        grid-template-columns: 1fr;
+
     }
 
-    .form-heading h2 {
-        font-size: 23px;
-    }
+    .afternoon-question,
+    .public-consent {
 
-    .option-row {
+        align-items: flex-start;
+
         flex-direction: column;
+
+        gap: 18px;
+
     }
 
-    .option {
+    .choice-pills {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .choice-pills label {
+
         width: 100%;
-        box-sizing: border-box;
+
+    }
+
+    .choice-pills span {
+
+        text-align: center;
+
+    }
+
+    .booking-submit-button {
+
+        width: 100%;
+
+    }
+
+    .sidebar-card {
+
+        padding: 27px;
+
     }
 
 }
