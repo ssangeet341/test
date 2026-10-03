@@ -2,20 +2,29 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Book a Consultation | Dr. Kanha</title>
 
-    <meta name="description"
-        content="Book a consultation and share your concerns with Dr. Kanha's clinic.">
+    <meta
+        name="description"
+        content="Book a personalised consultation with Dr. Kanha."
+    >
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
+<!-- ========================= -->
 <!-- NAVBAR -->
+<!-- ========================= -->
 
 <nav class="navbar">
 
@@ -24,33 +33,53 @@
     </div>
 
     <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="treatments.html">Treatments</a>
-        <a href="contact.html">Contact</a>
-        <a href="booking.html" class="nav-button">Book Consultation</a>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="treatments.html">
+            Treatments
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+        <a href="booking.html" class="nav-button">
+            Book Consultation
+        </a>
+
     </div>
 
 </nav>
 
 
-<!-- PAGE HERO -->
 
-<section class="page-hero">
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
 
-    <div class="container">
+<section class="booking-hero">
 
-        <p class="eyebrow">
-            APPOINTMENT
+    <div class="booking-hero-inner">
+
+        <p class="booking-eyebrow">
+            CONSULTATION
         </p>
 
         <h1>
-            Your visit starts here.
+            Your skin deserves<br>
+            personalised care.
         </h1>
 
         <p>
             Tell us a little about yourself and your concerns.
-            Our team will help you with the next step.
+            We'll help you take the next step towards your consultation.
         </p>
 
     </div>
@@ -58,770 +87,995 @@
 </section>
 
 
-<!-- BOOKING FORM -->
 
-<section class="booking-section">
+<!-- ========================= -->
+<!-- BOOKING AREA -->
+<!-- ========================= -->
 
-    <div class="container">
+<section class="booking-area">
 
-        <form id="bookingForm">
+    <div class="booking-layout">
 
 
-            <!-- PATIENT DETAILS -->
+        <!-- LEFT SIDE -->
 
-            <div class="form-card">
+        <main class="booking-form-area">
 
-                <div class="form-heading">
+            <form id="bookingForm">
 
-                    <span class="form-number">01</span>
 
-                    <div>
-                        <h2>Patient details</h2>
-                        <p>Basic information to help us know you better.</p>
+                <!-- ========================= -->
+                <!-- 01 PERSONAL DETAILS -->
+                <!-- ========================= -->
+
+                <div class="booking-section-block">
+
+                    <div class="section-label">
+                        <span>01</span>
+                        <p>PERSONAL DETAILS</p>
+                    </div>
+
+                    <div class="booking-section-content">
+
+                        <h2>
+                            Let's get to know you.
+                        </h2>
+
+                        <p class="section-description">
+                            A few basic details help us prepare for your visit.
+                        </p>
+
+
+                        <div class="clean-form-grid">
+
+                            <div class="clean-field">
+
+                                <label for="name">
+                                    Full name <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your full name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="clean-field">
+
+                                <label for="phone">
+                                    Mobile number <span>*</span>
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="+91 XXXXX XXXXX"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="clean-field">
+
+                                <label for="age">
+                                    Age
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="age"
+                                    name="age"
+                                    min="1"
+                                    max="120"
+                                    placeholder="Your age"
+                                >
+
+                            </div>
+
+
+                            <div class="clean-field">
+
+                                <label for="gender">
+                                    Gender
+                                </label>
+
+                                <select id="gender" name="gender">
+
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option>
+                                        Female
+                                    </option>
+
+                                    <option>
+                                        Male
+                                    </option>
+
+                                    <option>
+                                        Other
+                                    </option>
+
+                                    <option>
+                                        Prefer not to say
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="clean-field full-field">
+
+                                <label for="email">
+                                    Email address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                >
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
 
 
-                <div class="form-grid">
 
-                    <div class="form-group">
+                <!-- ========================= -->
+                <!-- 02 VISIT -->
+                <!-- ========================= -->
 
-                        <label for="name">
-                            Full name *
-                        </label>
+                <div class="booking-section-block">
+
+                    <div class="section-label">
+                        <span>02</span>
+                        <p>YOUR VISIT</p>
+                    </div>
+
+                    <div class="booking-section-content">
+
+                        <h2>
+                            Tell us about your visit.
+                        </h2>
+
+                        <p class="section-description">
+                            This helps us understand what kind of appointment
+                            you're looking for.
+                        </p>
+
+
+                        <div class="clean-field">
+
+                            <label>
+                                Have you visited us before? <span>*</span>
+                            </label>
+
+                            <div class="choice-grid two">
+
+                                <label class="choice-card">
+
+                                    <input
+                                        type="radio"
+                                        name="patientType"
+                                        value="First visit"
+                                        required
+                                    >
+
+                                    <span>
+                                        <strong>First visit</strong>
+                                        <small>I'm visiting for the first time</small>
+                                    </span>
+
+                                </label>
+
+
+                                <label class="choice-card">
+
+                                    <input
+                                        type="radio"
+                                        name="patientType"
+                                        value="Returning patient"
+                                    >
+
+                                    <span>
+                                        <strong>Returning patient</strong>
+                                        <small>I've visited the clinic before</small>
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="clean-form-grid">
+
+                            <div class="clean-field">
+
+                                <label for="date">
+                                    Preferred date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    name="date"
+                                >
+
+                            </div>
+
+
+                            <div class="clean-field">
+
+                                <label for="time">
+                                    Preferred time
+                                </label>
+
+                                <input
+                                    type="time"
+                                    id="time"
+                                    name="time"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="clean-field">
+
+                            <label>
+                                Preferred consultation period
+                            </label>
+
+                            <div class="choice-pills">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="slot"
+                                        value="Morning"
+                                    >
+                                    <span>Morning</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="slot"
+                                        value="Afternoon"
+                                    >
+                                    <span>Afternoon</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="slot"
+                                        value="Evening"
+                                    >
+                                    <span>Evening</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="slot"
+                                        value="No preference"
+                                    >
+                                    <span>No preference</span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="afternoon-question">
+
+                            <div>
+
+                                <strong>
+                                    Would you prefer afternoon consultations?
+                                </strong>
+
+                                <p>
+                                    Your response helps us understand patient preferences.
+                                </p>
+
+                            </div>
+
+
+                            <div class="mini-pills">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="afternoon"
+                                        value="Yes"
+                                    >
+                                    <span>Yes</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="afternoon"
+                                        value="No"
+                                    >
+                                    <span>No</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="afternoon"
+                                        value="No preference"
+                                    >
+                                    <span>No preference</span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- 03 CONCERN -->
+                <!-- ========================= -->
+
+                <div class="booking-section-block">
+
+                    <div class="section-label">
+                        <span>03</span>
+                        <p>YOUR CONCERN</p>
+                    </div>
+
+                    <div class="booking-section-content">
+
+                        <h2>
+                            What would you like help with?
+                        </h2>
+
+                        <p class="section-description">
+                            Select all the concerns that apply to you.
+                        </p>
+
+
+                        <div class="concern-grid">
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="concerns"
+                                    value="Acne"
+                                >
+                                <span>Acne</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="concerns"
+                                    value="Pigmentation"
+                                >
+                                <span>Pigmentation</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="concerns"
+                                    value="Hair fall"
+                                >
+                                <span>Hair fall</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="concerns"
+                                    value="Unwanted hair"
+                                >
+                                <span>Unwanted hair</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="concerns"
+                                    value="Anti-ageing"
+                                >
+                                <span>Anti-ageing</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="concerns"
+                                    value="Skin rejuvenation"
+                                >
+                                <span>Skin rejuvenation</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="concerns"
+                                    value="General consultation"
+                                >
+                                <span>General consultation</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="concerns"
+                                    value="Other"
+                                >
+                                <span>Other</span>
+                            </label>
+
+                        </div>
+
+
+                        <div class="clean-field">
+
+                            <label for="concernDetails">
+                                Tell us a little more
+                            </label>
+
+                            <textarea
+                                id="concernDetails"
+                                name="concernDetails"
+                                rows="4"
+                                placeholder="Optional — briefly describe your concern..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- 04 MEDICAL HISTORY -->
+                <!-- ========================= -->
+
+                <div class="booking-section-block">
+
+                    <div class="section-label">
+                        <span>04</span>
+                        <p>MEDICAL HISTORY</p>
+                    </div>
+
+                    <div class="booking-section-content">
+
+                        <h2>
+                            Anything we should know?
+                        </h2>
+
+                        <p class="section-description">
+                            Please select any relevant medical conditions or
+                            information.
+                        </p>
+
+
+                        <div class="medical-grid">
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="history"
+                                    value="Diabetes"
+                                >
+                                <span>Diabetes</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="history"
+                                    value="Hypertension"
+                                >
+                                <span>Hypertension</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="history"
+                                    value="Thyroid"
+                                >
+                                <span>Thyroid condition</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="history"
+                                    value="PCOS/PCOD"
+                                >
+                                <span>PCOS / PCOD</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="history"
+                                    value="Allergies"
+                                >
+                                <span>Known allergies</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="history"
+                                    value="Previous treatment"
+                                >
+                                <span>Previous skin / hair treatment</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="history"
+                                    value="Current medication"
+                                >
+                                <span>Current medication</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="history"
+                                    value="None"
+                                >
+                                <span>None of these</span>
+                            </label>
+
+                        </div>
+
+
+                        <div class="clean-field">
+
+                            <label for="medications">
+                                Additional medical information
+                            </label>
+
+                            <textarea
+                                id="medications"
+                                name="medications"
+                                rows="4"
+                                placeholder="Optional — mention anything you feel is relevant..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- 05 PHOTOGRAPHY -->
+                <!-- ========================= -->
+
+                <div class="booking-section-block">
+
+                    <div class="section-label">
+                        <span>05</span>
+                        <p>PHOTOGRAPHY</p>
+                    </div>
+
+                    <div class="booking-section-content">
+
+                        <h2>
+                            Treatment documentation.
+                        </h2>
+
+                        <p class="section-description">
+                            Photography can help document treatment progress.
+                            Your choices below are separate.
+                        </p>
+
+
+                        <div class="clean-field">
+
+                            <label>
+                                Clinical photography
+                            </label>
+
+                            <div class="choice-pills vertical-mobile">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="clinicalPhoto"
+                                        value="Full face"
+                                    >
+                                    <span>Full face</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="clinicalPhoto"
+                                        value="Half face / selected area"
+                                    >
+                                    <span>Half face / selected area</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="clinicalPhoto"
+                                        value="Treatment area only"
+                                    >
+                                    <span>Treatment area only</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="clinicalPhoto"
+                                        value="No"
+                                    >
+                                    <span>No</span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="public-consent">
+
+                            <div>
+
+                                <strong>
+                                    Educational / promotional use
+                                </strong>
+
+                                <p>
+                                    Separate permission for use of photographs
+                                    for educational or promotional purposes.
+                                </p>
+
+                            </div>
+
+
+                            <div class="mini-pills">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="publicPhoto"
+                                        value="Yes"
+                                    >
+                                    <span>Yes</span>
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="publicPhoto"
+                                        value="No"
+                                    >
+                                    <span>No</span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <p class="small-note">
+                            Final consent wording should be reviewed and approved
+                            by the clinic before this form is used for real patients.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- 06 DISCOVER + FEEDBACK -->
+                <!-- ========================= -->
+
+                <div class="booking-section-block">
+
+                    <div class="section-label">
+                        <span>06</span>
+                        <p>FEEDBACK</p>
+                    </div>
+
+                    <div class="booking-section-content">
+
+                        <h2>
+                            One last thing.
+                        </h2>
+
+                        <div class="clean-form-grid">
+
+                            <div class="clean-field">
+
+                                <label for="source">
+                                    How did you hear about us?
+                                </label>
+
+                                <select id="source" name="source">
+
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option>Google</option>
+                                    <option>Instagram</option>
+                                    <option>Facebook</option>
+                                    <option>Friend / Family</option>
+                                    <option>Existing patient</option>
+                                    <option>Walk-in</option>
+                                    <option>Other</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="clean-field">
+
+                                <label for="rating">
+                                    Experience rating
+                                </label>
+
+                                <select id="rating" name="rating">
+
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option>5 — Excellent</option>
+                                    <option>4 — Very good</option>
+                                    <option>3 — Good</option>
+                                    <option>2 — Needs improvement</option>
+                                    <option>1 — Poor</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="clean-field">
+
+                            <label for="feedback">
+                                Your feedback
+                            </label>
+
+                            <textarea
+                                id="feedback"
+                                name="feedback"
+                                rows="4"
+                                placeholder="We'd love to hear from you..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- ACKNOWLEDGEMENT -->
+                <!-- ========================= -->
+
+                <div class="final-consent">
+
+                    <label>
 
                         <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your full name"
+                            type="checkbox"
+                            id="acknowledgement"
                             required
                         >
 
-                    </div>
+                        <span>
+                            I confirm that the information provided is accurate
+                            to the best of my knowledge and understand that this
+                            form is not intended for medical emergencies.
+                        </span>
 
-
-                    <div class="form-group">
-
-                        <label for="age">
-                            Age
-                        </label>
-
-                        <input
-                            type="number"
-                            id="age"
-                            name="age"
-                            min="1"
-                            max="120"
-                            placeholder="Your age"
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="gender">
-                            Gender
-                        </label>
-
-                        <select id="gender" name="gender">
-
-                            <option value="">
-                                Select
-                            </option>
-
-                            <option>
-                                Female
-                            </option>
-
-                            <option>
-                                Male
-                            </option>
-
-                            <option>
-                                Other
-                            </option>
-
-                            <option>
-                                Prefer not to say
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="phone">
-                            Mobile number *
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="+91 XXXXX XXXXX"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group full-width">
-
-                        <label for="email">
-                            Email address
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="you@example.com"
-                        >
-
-                    </div>
+                    </label>
 
                 </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <div class="booking-submit">
+
+                    <button
+                        type="submit"
+                        class="booking-submit-button"
+                    >
+                        Request an Appointment
+                        <span>→</span>
+                    </button>
+
+                    <p>
+                        Appointment requests are subject to clinic confirmation.
+                    </p>
+
+                </div>
+
+
+            </form>
+
+
+            <!-- SUCCESS -->
+
+            <div
+                id="successMessage"
+                class="booking-success"
+            >
+
+                <div class="success-check">
+                    ✓
+                </div>
+
+                <p class="booking-eyebrow">
+                    REQUEST RECEIVED
+                </p>
+
+                <h2>
+                    Thank you.
+                </h2>
+
+                <p>
+                    Your appointment request has been recorded for this demo.
+                    The clinic team can contact you for confirmation.
+                </p>
+
+                <button
+                    class="success-again"
+                    onclick="window.location.reload()"
+                >
+                    Submit another request
+                </button>
 
             </div>
 
+        </main>
 
 
-            <!-- VISIT DETAILS -->
 
-            <div class="form-card">
+        <!-- ========================= -->
+        <!-- RIGHT SIDEBAR -->
+        <!-- ========================= -->
 
-                <div class="form-heading">
+        <aside class="booking-sidebar">
 
-                    <span class="form-number">02</span>
+            <div class="sidebar-card">
+
+                <p class="sidebar-eyebrow">
+                    YOUR CONSULTATION
+                </p>
+
+                <h3>
+                    Personalised care,
+                    from the first conversation.
+                </h3>
+
+                <p>
+                    Every consultation begins with understanding your
+                    concerns, history and goals.
+                </p>
+
+
+                <div class="sidebar-line"></div>
+
+
+                <div class="sidebar-point">
+
+                    <span>01</span>
 
                     <div>
-                        <h2>Your visit</h2>
-                        <p>Tell us about the appointment you're looking for.</p>
-                    </div>
+                        <strong>
+                            Tell us about you
+                        </strong>
 
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Is this your first visit? *
-                    </label>
-
-                    <div class="option-row">
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="patientType"
-                                value="First visit"
-                                required
-                            >
-                            <span>First visit</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="patientType"
-                                value="Returning patient"
-                            >
-                            <span>Returning patient</span>
-                        </label>
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-grid">
-
-                    <div class="form-group">
-
-                        <label for="date">
-                            Preferred date
-                        </label>
-
-                        <input
-                            type="date"
-                            id="date"
-                            name="date"
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="time">
-                            Preferred time
-                        </label>
-
-                        <input
-                            type="time"
-                            id="time"
-                            name="time"
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Preferred consultation slot
-                    </label>
-
-                    <div class="option-row">
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="slot"
-                                value="Morning"
-                            >
-                            <span>Morning</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="slot"
-                                value="Afternoon"
-                            >
-                            <span>Afternoon</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="slot"
-                                value="Evening"
-                            >
-                            <span>Evening</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="slot"
-                                value="No preference"
-                            >
-                            <span>No preference</span>
-                        </label>
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Would you prefer an afternoon consultation?
-                    </label>
-
-                    <div class="option-row">
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="afternoon"
-                                value="Yes"
-                            >
-                            <span>Yes</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="afternoon"
-                                value="No"
-                            >
-                            <span>No</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="afternoon"
-                                value="No preference"
-                            >
-                            <span>No preference</span>
-                        </label>
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="concern">
-                        Main concern
-                    </label>
-
-                    <select id="concern" name="concern">
-
-                        <option value="">
-                            Select your main concern
-                        </option>
-
-                        <option>
-                            Acne
-                        </option>
-
-                        <option>
-                            Pigmentation
-                        </option>
-
-                        <option>
-                            Hair fall
-                        </option>
-
-                        <option>
-                            Unwanted hair
-                        </option>
-
-                        <option>
-                            Anti-ageing
-                        </option>
-
-                        <option>
-                            Skin rejuvenation
-                        </option>
-
-                        <option>
-                            General consultation
-                        </option>
-
-                        <option>
-                            Other
-                        </option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- MEDICAL HISTORY -->
-
-            <div class="form-card">
-
-                <div class="form-heading">
-
-                    <span class="form-number">03</span>
-
-                    <div>
-                        <h2>Medical history</h2>
-                        <p>Select anything that may be relevant to your consultation.</p>
-                    </div>
-
-                </div>
-
-
-                <div class="checkbox-grid">
-
-                    <label class="check-option">
-                        <input type="checkbox" name="history" value="Diabetes">
-                        <span>Diabetes</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="history" value="Hypertension">
-                        <span>Hypertension</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="history" value="Thyroid">
-                        <span>Thyroid condition</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="history" value="PCOS/PCOD">
-                        <span>PCOS / PCOD</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="history" value="Allergies">
-                        <span>Known allergies</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="history" value="Previous treatment">
-                        <span>Previous skin/hair treatment</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="history" value="Current medication">
-                        <span>Currently taking medication</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="history" value="None">
-                        <span>None of these</span>
-                    </label>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="medications">
-                        Current medication / relevant medical information
-                    </label>
-
-                    <textarea
-                        id="medications"
-                        name="medications"
-                        rows="4"
-                        placeholder="Optional — mention anything you think the doctor should know."
-                    ></textarea>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- CONCERNS -->
-
-            <div class="form-card">
-
-                <div class="form-heading">
-
-                    <span class="form-number">04</span>
-
-                    <div>
-                        <h2>Skin & hair concerns</h2>
-                        <p>You can select more than one.</p>
-                    </div>
-
-                </div>
-
-
-                <div class="checkbox-grid">
-
-                    <label class="check-option">
-                        <input type="checkbox" name="concerns" value="Acne">
-                        <span>Acne</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="concerns" value="Pigmentation">
-                        <span>Pigmentation</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="concerns" value="Hair fall">
-                        <span>Hair fall</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="concerns" value="Unwanted hair">
-                        <span>Unwanted hair</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="concerns" value="Anti-ageing">
-                        <span>Anti-ageing</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="concerns" value="Skin rejuvenation">
-                        <span>Skin rejuvenation</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="concerns" value="Other">
-                        <span>Other</span>
-                    </label>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PHOTO CONSENT -->
-
-            <div class="form-card">
-
-                <div class="form-heading">
-
-                    <span class="form-number">05</span>
-
-                    <div>
-                        <h2>Photography consent</h2>
                         <p>
-                            This helps the clinic document treatment progress.
+                            Basic details and your concerns.
                         </p>
                     </div>
 
                 </div>
 
 
-                <div class="form-group">
+                <div class="sidebar-point">
 
-                    <label>
-                        Clinical photography consent
-                    </label>
-
-                    <div class="option-column">
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="clinicalPhoto"
-                                value="Yes - Full face"
-                            >
-                            <span>Yes — full face</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="clinicalPhoto"
-                                value="Yes - Half face / selected area"
-                            >
-                            <span>Yes — half face / selected area</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="clinicalPhoto"
-                                value="Yes - Treatment area only"
-                            >
-                            <span>Yes — treatment area only</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="clinicalPhoto"
-                                value="No"
-                            >
-                            <span>No</span>
-                        </label>
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Permission for educational / promotional use
-                    </label>
-
-                    <div class="option-row">
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="publicPhoto"
-                                value="Yes"
-                            >
-                            <span>Yes</span>
-                        </label>
-
-                        <label class="option">
-                            <input
-                                type="radio"
-                                name="publicPhoto"
-                                value="No"
-                            >
-                            <span>No</span>
-                        </label>
-
-                    </div>
-
-                    <p class="form-note">
-                        This is separate from clinical documentation and should
-                        be used only after the clinic's final consent wording
-                        has been reviewed and approved.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- FEEDBACK -->
-
-            <div class="form-card">
-
-                <div class="form-heading">
-
-                    <span class="form-number">06</span>
+                    <span>02</span>
 
                     <div>
-                        <h2>Feedback</h2>
-                        <p>Help us understand how you found us.</p>
+                        <strong>
+                            Choose your preference
+                        </strong>
+
+                        <p>
+                            Let us know your preferred date and time.
+                        </p>
                     </div>
 
                 </div>
 
 
-                <div class="form-grid">
+                <div class="sidebar-point">
 
-                    <div class="form-group">
+                    <span>03</span>
 
-                        <label for="source">
-                            How did you hear about us?
-                        </label>
+                    <div>
+                        <strong>
+                            We'll confirm
+                        </strong>
 
-                        <select id="source" name="source">
-
-                            <option value="">
-                                Select
-                            </option>
-
-                            <option>Google</option>
-                            <option>Instagram</option>
-                            <option>Facebook</option>
-                            <option>Friend / Family</option>
-                            <option>Existing patient</option>
-                            <option>Walk-in</option>
-                            <option>Other</option>
-
-                        </select>
-
+                        <p>
+                            The clinic team can contact you to confirm.
+                        </p>
                     </div>
-
-
-                    <div class="form-group">
-
-                        <label for="rating">
-                            Experience rating
-                        </label>
-
-                        <select id="rating" name="rating">
-
-                            <option value="">
-                                Select rating
-                            </option>
-
-                            <option>5 — Excellent</option>
-                            <option>4 — Very good</option>
-                            <option>3 — Good</option>
-                            <option>2 — Needs improvement</option>
-                            <option>1 — Poor</option>
-
-                        </select>
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="feedback">
-                        Your feedback
-                    </label>
-
-                    <textarea
-                        id="feedback"
-                        name="feedback"
-                        rows="5"
-                        placeholder="Tell us about your experience..."
-                    ></textarea>
 
                 </div>
 
             </div>
 
 
+            <div class="sidebar-note">
 
-            <!-- ACKNOWLEDGEMENT -->
-
-            <div class="form-card acknowledgement">
-
-                <label class="consent-checkbox">
-
-                    <input
-                        type="checkbox"
-                        id="acknowledgement"
-                        required
-                    >
-
-                    <span>
-                        I confirm that the information provided by me is
-                        accurate to the best of my knowledge. I understand that
-                        this form is for appointment/clinic communication and
-                        is not intended for medical emergencies.
-                    </span>
-
-                </label>
-
-            </div>
-
-
-
-            <!-- SUBMIT -->
-
-            <div class="form-submit">
-
-                <button
-                    type="submit"
-                    class="primary-button"
-                >
-                    Request Appointment
-                </button>
+                <strong>
+                    Need help first?
+                </strong>
 
                 <p>
-                    Our team can contact you to confirm the appointment.
+                    Have a question before booking?
                 </p>
 
+                <a href="contact.html">
+                    Contact the clinic →
+                </a>
+
             </div>
 
-
-        </form>
-
-
-
-        <!-- SUCCESS MESSAGE -->
-
-        <div
-            id="successMessage"
-            class="success-message"
-        >
-
-            <div class="success-icon">
-                ✓
-            </div>
-
-            <h2>
-                Thank you.
-            </h2>
-
-            <p>
-                Your appointment request has been recorded for this demo.
-                The clinic team can contact you for confirmation.
-            </p>
-
-            <button
-                onclick="window.location.reload()"
-                class="secondary-button"
-            >
-                Submit another request
-            </button>
-
-        </div>
+        </aside>
 
     </div>
 
@@ -829,31 +1083,9 @@
 
 
 
-<!-- CTA -->
-
-<section class="dark-cta">
-
-    <div class="container">
-
-        <h2>
-            Have a question before booking?
-        </h2>
-
-        <p>
-            We're happy to help.
-        </p>
-
-        <a href="contact.html" class="light-button">
-            Contact the Clinic
-        </a>
-
-    </div>
-
-</section>
-
-
-
+<!-- ========================= -->
 <!-- FOOTER -->
+<!-- ========================= -->
 
 <footer>
 
@@ -866,6 +1098,7 @@
     </div>
 
 </footer>
+
 
 
 <script src="script.js"></script>
