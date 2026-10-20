@@ -1,5 +1,47 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book Consultation | Skin Selection</title><meta name="description" content="Request a consultation with Dr. Kapila Verma Wadhwani at Skin Selection, Bhopal."><link rel="stylesheet" href="style.css"></head><body>
-<header class="nav"><a class="brand" href="index.html"><span class="mark">SS</span><span><b>SKIN SELECTION</b><small>SKIN • HAIR • NAIL • LASER CLINIC</small></span></a><nav><a href="index.html">Home</a><a href="about.html">Dr. Kapila</a><a href="treatments.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></nav></header>
-<section class="pagehero"><p class="eyebrow">APPOINTMENTS</p><h1>Book a<br><i>consultation.</i></h1><p>This is a demo booking interface for the website presentation.</p></section>
-<section class="booking section"><form id="bookingForm"><label>Name<input required placeholder="Your name"></label><label>Phone<input required placeholder="Mobile number"></label><label>Concern<select><option>Skin</option><option>Hair</option><option>Laser</option><option>Aesthetic concern</option><option>Other</option></select></label><label>Preferred date<input type="date"></label><label>Message<textarea placeholder="Briefly tell us about your concern"></textarea></label><button class="btn" type="submit">Request Appointment →</button></form><div id="success" class="success"><h2>Thank you.</h2><p>Your demo request has been received. In the final website this form can connect to WhatsApp, email or the clinic's booking system.</p><a class="link" href="index.html">Back to home →</a></div></section>
-<footer><div class="brand"><span class="mark">SS</span><span><b>SKIN SELECTION</b><small>SKIN • HAIR • NAIL • LASER CLINIC</small></span></div><p>© 2026 Skin Selection • Bhopal</p></footer><script src="script.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book a consultation · Skin Selection</title><meta name="description" content="Skin Selection — dermatologist-led skin, hair, nail and laser care in Bhopal.">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="cursor-orb" id="cursorOrb"></div>
+<div class="grain"></div>
+<div class="progress" id="progress"></div>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="Skin Selection home">
+    <span class="brand-mark"><i></i><b></b></span>
+    <span><strong>Skin</strong><em>Selection</em><small>SKIN · HAIR · NAIL · LASER CLINIC</small></span>
+  </a>
+  <nav id="navLinks">
+    <a href="services.html">Services</a>
+    <a href="index.html#doctor">Doctor</a>
+    <a href="index.html#results">Results</a>
+    <a href="blog.html">Journal</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a class="nav-cta" href="booking.html">Book consultation <span>↗</span></a>
+  <button class="menu" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
+</header>
+
+<main>
+<section class="page-hero"><div class="reveal"><div class="eyebrow">Skin Selection</div><h1>Your skin deserves<br>a <span class="serif">conversation.</span></h1><p>Request a consultation. This prototype form can later connect to WhatsApp, email or an online booking system.</p></div></section>
+<section class="section"><form class="form reveal" id="bookingForm">
+<input required placeholder="Your name"><input required type="tel" placeholder="Phone number">
+<select><option>What would you like help with?</option><option>Skin concern</option><option>Hair concern</option><option>Nail concern</option><option>Aesthetic consultation</option><option>Laser hair reduction</option><option>Other</option></select>
+<textarea placeholder="Tell us briefly about your concern"></textarea><button class="btn primary" type="submit">Request consultation ↗</button><p id="formMsg" style="color:#6e706c;font-size:12px"></p>
+</form></section>
+<section class="section doctor reveal"><div><div class="eyebrow">Doctor</div><h2>Dr. Kapila<br><i>Verma.</i></h2></div><div class="doctor-copy"><p>MBBS, MD, DNB (Dermatology, Venereology &amp; Leprology). Consultant — JK Hospital &amp; LN Medical College. Reg. No. MP-15308.</p><a class="btn" href="tel:6262363738">Call 6262363738 ↗</a></div></section>
+</main>
+
+<footer class="footer">
+  <div>
+    <div class="footer-brand">Skin <span>Selection</span></div>
+    <p>Dermatology, aesthetics &amp; skin health — with a clinical-first approach.</p>
+  </div>
+  <div class="footer-links">
+    <a href="services.html">Services</a><a href="blog.html">Journal</a>
+    <a href="contact.html">Contact</a><a href="booking.html">Book</a>
+  </div>
+  <div class="footer-meta">
+    <span>Bhopal · Madhya Pradesh</span>
+    <span>© 2026 Skin Selection</span>
+  </div>
+</footer>
+<script src="script.js"></script></body></html>
